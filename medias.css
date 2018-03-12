@@ -1,0 +1,107 @@
+main{
+    border:1px solid #D0D1D7;
+    max-width: 1024px;
+}
+#drawer{
+    max-width: 1024px;
+}
+.header__inner{
+    max-width: 1300px;
+}
+.content{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin-left:auto; 
+    margin-right:auto; 
+    border:1px solid #Fefefe;
+    
+}
+.content section {
+    width:50%;
+    
+}
+
+.hamburger__menu{
+    display: block;
+    float: right;
+    font-size: 2.0em;
+    padding: 0px 7px;
+    color: #c7bfbf;
+    background-color: #fff;
+    border: 1px solid #f1eded;
+    margin-top: 10px;  
+    display: none;  
+}
+
+.hamburger__menu:hover{
+    
+    background-color: #f1eded;
+    color:#FFF;
+}
+
+.nav.open {
+    -webkit-transform: translate(0, 57px);
+    transform: translate(0, 57px);
+}
+
+@media screen and (max-width:400px) {
+    .header__logo{
+        height: 35px;
+        margin-right: 0.1em;
+        vertical-align: top;
+        margin-top: 8px;
+    }
+    .header__title{
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+   
+}
+
+@media screen and (max-width:768px) {
+    .content section {
+        width:100%;
+    }
+
+    .header__logo{
+        height: 45px;
+        margin-right: 0.1em;
+        vertical-align: top;
+        margin-top: 2px;
+    }
+    .header__title{
+        font-size: 2em;
+    }
+    .hamburger__menu{
+        display:block;
+    }
+    .nav {
+        width: 200px;       
+        border: 1px solid #D0D1D7;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        -webkit-transform: translate(0, -300px);
+        transform: translate(0, -300px);
+        transition: transform 0.6s ease;
+        z-index: 10;
+        background-color: #FFF;
+    }
+    .nav__item {
+        box-sizing: border-box;
+        /* display: inline-block; */
+        width: 100%;
+        text-align: left;
+        line-height: 24px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and  (min-width:768px) and (max-width:1024px) {
+    .content section {
+        width:50%;
+    }
+}
